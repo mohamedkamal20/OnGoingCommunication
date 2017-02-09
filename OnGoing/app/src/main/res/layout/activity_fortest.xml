@@ -1,0 +1,79 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/back2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_margin="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:id="@+id/post_ownerName"
+            android:textStyle="bold|italic"
+            android:textSize="25sp"
+            android:text="POST OWNER"/>
+        <ScrollView
+            android:layout_below="@id/post_ownerName"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/scrollId">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:id="@+id/main_Post_body"
+                android:text="This is the main Post"
+                />
+        </ScrollView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Like"
+
+            android:id="@+id/like_Button"
+            android:layout_below="@+id/scrollId"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scrollId"
+            android:layout_toRightOf="@+id/like_Button"
+            android:text="Show likes"
+            android:id="@+id/showlikes"
+            />
+
+
+        <ListView
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/like_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listViewComment">
+        </ListView>
+
+        <ScrollView
+            android:layout_below="@id/listViewComment"
+            android:id="@+id/AddCommentScroll"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/newComment"
+                android:layout_height="50dp"
+                android:hint="Add Comment"/>
+        </ScrollView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Comment"
+            android:id="@+id/AddCommentbutton"
+            android:layout_below="@id/AddCommentScroll"/>
+    </RelativeLayout>
+</ScrollView>

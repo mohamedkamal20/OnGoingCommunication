@@ -1,0 +1,144 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    >
+<LinearLayout  android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.maged.ongoing.Chickin"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_marginBottom="20dp"
+
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Home"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            android:id="@+id/homeback"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Profile"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            android:id="@+id/Profileback"
+
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Options"
+            android:textSize="15sp"
+            android:textStyle="bold|italic"
+            android:id="@+id/optionsback"
+
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Log Out"
+            android:textSize="15sp"
+            android:textStyle="bold|italic"
+            android:id="@+id/logout"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+       android:layout_marginTop="20dp"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="horizontal"
+       android:weightSum="2"
+       >
+       <TextView
+           android:layout_width="0sp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="Chick in to :"
+           android:textSize="20dp"
+           android:textStyle="bold|italic"
+           android:textColor="#ff9efffd"
+
+           />
+       <EditText
+           android:layout_width="0sp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:hint="Enter your place"
+           android:id="@+id/place_chickin"
+           android:textSize="20sp"
+           android:textStyle="italic"
+           android:textColor="#ff9efffd"
+           android:textColorHint="#ff9efffd"
+           />
+
+       </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your feed back"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:textColor="#ff9efffd"
+
+        />
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter your feed back..."
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:id="@+id/text_chickin"
+            android:textColor="#ff9efffd"
+            android:textColorHint="#ff9efffd"
+            />
+
+        </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm chick in"
+        android:textStyle="bold|italic"
+        android:textSize="20sp"
+        android:id="@+id/confirm_chickin"
+        />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Result of chick in..."
+    android:textSize="20sp"
+    android:textStyle="italic"
+    android:id="@+id/result_chickin"
+    android:textColor="#ff9efffd"
+    android:textColorHint="#ff9efffd"
+
+    />
+</LinearLayout>
+
+</ScrollView>

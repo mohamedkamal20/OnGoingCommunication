@@ -1,0 +1,164 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/back1"
+    >
+    <LinearLayout  android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        tools:context="com.example.maged.ongoing.AddPlace">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="25dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Place Name"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:textColor="#ff9efffd"
+
+                />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/place_name"
+                android:hint="Enter Place Name"
+                android:textStyle="italic"
+                android:textSize="20sp"
+                android:textColor="#ff9efffd"
+                android:textColorHint="#ff9efffd"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="25dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Place Latitude"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:textColor="#ff9efffd"
+
+                />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/place_latitude"
+                android:hint="Enter Place Latitude"
+                android:textStyle="italic"
+                android:textSize="20sp"
+                android:textColor="#ff9efffd"
+                android:textColorHint="#ff9efffd"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="25dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Place Longtude"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:textColor="#ff9efffd"
+
+                />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/place_Longtude"
+                android:hint="Enter Place Longtude"
+                android:textStyle="italic"
+                android:textSize="20sp"
+                android:textColor="#ff9efffd"
+                android:textColorHint="#ff9efffd"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="25dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Place Description"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:textColor="#ff9efffd"
+
+                />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/place_description"
+                android:hint="Enter Place Description"
+                android:textStyle="italic"
+                android:textSize="20sp"
+                android:textColor="#ff9efffd"
+                android:textColorHint="#ff9efffd"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="20dp">
+            <Button
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:text="Add New Place"
+                android:id="@+id/add_new_place"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:textColor="#000000"
+                android:layout_weight="1"
+                android:background="@drawable/but3"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="Statues...."
+                android:textSize="20sp"
+                android:id="@+id/statues_id"
+                android:textStyle="bold|italic"
+                android:layout_weight="1"
+                android:textColor="#ff9efffd"
+                android:textColorHint="#ff9efffd"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

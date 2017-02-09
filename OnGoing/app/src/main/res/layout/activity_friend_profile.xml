@@ -1,0 +1,169 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.maged.ongoing.friend_profile"
+    android:background="@drawable/back5"
+    >
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+    >
+
+    //---------------------------------------
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:weightSum="4"
+          android:layout_marginBottom="20dp"
+
+          >
+          <Button
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="Home"
+              android:textSize="16sp"
+              android:textStyle="bold|italic"
+              android:id="@+id/homeback"
+              />
+          <Button
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="Profile"
+              android:textSize="16sp"
+              android:textStyle="bold|italic"
+              android:id="@+id/Profileback"
+              android:background="#ff4ffff3"
+
+              />
+          <Button
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="Options"
+              android:textSize="15sp"
+              android:textStyle="bold|italic"
+              android:id="@+id/optionsback"
+
+              />
+          <Button
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="Log Out"
+              android:textSize="15sp"
+              android:textStyle="bold|italic"
+              android:id="@+id/logout"
+              />
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          >
+          <TextView
+              android:layout_width="170dp"
+              android:layout_height="wrap_content"
+              android:text="User name :"
+              android:textSize="20dp"
+              android:textStyle="bold|italic"
+              android:textColor="#ff9efffd"
+
+              />
+          <TextView
+              android:layout_width="170dp"
+              android:layout_height="wrap_content"
+              android:hint="User name"
+              android:textSize="20dp"
+              android:textStyle="italic"
+              android:id="@+id/userName"
+              android:textColor="#ff9efffd"
+              android:textColorHint="#ff9efffd"
+
+              />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          >
+
+          <TextView
+              android:layout_width="170dp"
+              android:layout_height="wrap_content"
+              android:text="User Email :"
+              android:textSize="20dp"
+              android:textStyle="bold|italic"
+              android:textColor="#ff9efffd"
+              />
+          <TextView
+              android:layout_width="170dp"
+              android:layout_height="wrap_content"
+              android:hint="email"
+              android:textSize="20dp"
+              android:textStyle="italic"
+              android:id="@+id/email"
+              android:textColor="#ff9efffd"
+              android:textColorHint="#ff9efffd"
+              />
+      </LinearLayout>
+
+
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:weightSum="2"
+          >
+          <Button
+              android:layout_width="0dp"
+              android:layout_height="50dp"
+              android:text="Follow"
+              android:textSize="20dp"
+              android:textStyle="italic"
+              android:id="@+id/follow"
+              android:layout_weight="1"
+
+              />
+
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="50dp"
+              android:text="Unfollow"
+              android:textSize="20dp"
+              android:textStyle="italic"
+              android:id="@+id/unfollow"
+              android:layout_weight="1"
+              />
+    </LinearLayout>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:hint="Result..."
+          android:textSize="20dp"
+          android:textStyle="italic"
+          android:id="@+id/result"
+          android:textColorHint="#ff9efffd"
+          android:textColor="#ff9efffd"
+          />
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
